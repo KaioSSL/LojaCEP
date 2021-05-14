@@ -16,3 +16,6 @@ Além do endereço padrão para tratamento do CRUD de faixas de CEP entre lojas,
 /api/loja/lojaMaisProxima/{cep} 
 
 Recebe uma requisição do tipo Get, e retorna a loja responsável pela faixa de cep em que o cep inserido se encontra.
+
+Para configurar as informações de banco e conexões
+bin\src\main\resources\application.properties
