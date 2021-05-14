@@ -72,7 +72,6 @@ public class LojaController {
 		//Retorna uma stream de todas faixas de CEP ja existentes.
 		Stream<Loja> lojasStream = StreamSupport.stream(repository.findAll().spliterator(), false);
 		//Aplica para todas lojas a comparação do método 'foraRange', se todas retornarem verdadeiro, não conflita com nenhuma faixa de cep
-		System.out.println(loja.toString());
 		if(lojasStream.allMatch(foraDoRange)) {	
 			//Realiza o cadastro do objeto.
 			return repository.save(loja);
